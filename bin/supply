@@ -17,7 +17,4 @@ echo "matplotlib" >> $BUILD_DIR/requirements.txt
 echo "            define web process"
 echo 'web: jupyter notebook --no-browser --no-mathjax --ip=* --port $PORT' > $BUILD_DIR/Procfile
 
-echo "            set runtime"
-echo 'python-3.7.x' > $BUILD_DIR/runtime.txt
-
 echo "        DONE =)"
