@@ -9,6 +9,10 @@ ENV_DIR=$3
 # hacking all into the build dir
 
 echo "            setup deps"
+
+# append newline when requirements.txt exists
+ls $BUILD_DIR/requirements.txt && echo "" >> $BUILD_DIR/requirements.txt
+
 echo "jupyterlab" >> $BUILD_DIR/requirements.txt
 echo "pandas" >> $BUILD_DIR/requirements.txt
 echo "openpyxl" >> $BUILD_DIR/requirements.txt
